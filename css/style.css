@@ -62,9 +62,8 @@ body::-webkit-scrollbar-thumb {
 	border-radius:10px;
 	line-height:20px;
 	transition:0.1s linear;
-	
-	
 }
+
 
 
 
@@ -94,6 +93,30 @@ canvas {
 	top:20%;
 }
 
+#badge{
+	width:170px;
+	bottom:80px;
+	position:relative;
+	transition:0.5s linear;
+	
+}
+
+@media(max-width:970px){
+#badge{
+	width:140px;
+	bottom:50px;
+	position:relative;
+	transition:0.5s linear;
+	
+}	
+}
+
+#badge:hover{
+	filter: grayscale(100%);
+	transition:0.25s linear;
+	cursor:pointer;
+}
+
 @media(max-width:768px){
 .logo{
 	position:absolute;
@@ -104,6 +127,15 @@ canvas {
 	margin-right:auto;
 	display:block;
 	top:35%;
+	overflow:hidden;
+}
+#badge{
+	width:100px;
+	top:0.2px;
+}
+
+.okokok{
+	float:right;
 }
 	
 }
