@@ -98,6 +98,8 @@ canvas {
 	bottom:80px;
 	position:relative;
 	transition:0.5s linear;
+	filter: grayscale(60%);
+
 	
 }
 
@@ -108,11 +110,12 @@ canvas {
 	position:relative;
 	transition:0.5s linear;
 	
+	
 }	
 }
 
 #badge:hover{
-	filter: grayscale(100%);
+	filter: grayscale(0%);
 	transition:0.25s linear;
 	cursor:pointer;
 }
@@ -307,6 +310,83 @@ canvas {
             transform: scale(1, 1);
   }
 }
+
+
+
+
+.events
+{
+	padding-top: 90px;
+	width:80%;
+	margin-left:13.5%;
+	display:block;
+	position:absolute;
+	
+	
+
+}
+.events img
+{
+	width: 12vw;
+	transition: 0.15s ease-in-out;
+	margin-left:-4px;
+	overflow:hidden;
+}
+.events:hover img
+{
+	filter:brightness(0.4);
+
+}
+.events img:hover
+{
+	filter:brightness(1);
+}
+
+
+
+@media(max-width:768px){
+
+.events
+{
+	padding-top: 90px;
+	width:75%;
+	margin-left:14vw;
+	display:block;
+	position:absolute;
+}
+
+.events img
+{
+	width: 25vw;
+	transition: 0.15s ease-in-out;
+	margin-left:-4px;
+	overflow:hidden;
+}
+.events:hover img
+{
+	filter:brightness(0.4);
+
+}
+.events img:hover
+{
+	filter:brightness(1);
+}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
 
 
 
