@@ -1,4 +1,4 @@
-var partNum = 100;
+var partNum = 40;
 
 
 var c = document.getElementById('c');
