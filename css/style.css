@@ -154,15 +154,40 @@ canvas {
 	overflow:hidden;
 }
 
+.aboutfest p{
+	font-size:16px;
+	text-align:justify;
+}
+
 .aboutfest{
 	padding:2.34vw;
 	font-family:Open Sans;
 	width:auto;
-	height:90.08vw;
+	height:700px;
 	margin:6.24vw;
 	background-color:rgba(255,255,255, 0.8);
 	border-radius:5px;
 	overflow:hidden;
+}
+
+@media(max-width:768px){
+.fest{
+	width:100%;
+	height:485px;
+	background-attachment:fixed;
+	background-image:url("../images/about.gif");
+	overflow:hidden;
+}
+
+.aboutfest p{
+	font-size:10px;
+	text-align:justify;
+}
+
+.aboutfest h1{
+	font-size:15px;
+}
+	
 }
 
 
@@ -314,16 +339,21 @@ canvas {
 
 
 
+
+.allevents{
+	background-image:url("../images/bg.gif");
+	width:100%;
+	height: 1050px;
+	background-attachment:fixed;	
+}
+
 .events
 {
-	padding-top: 90px;
-	width:80%;
+	margin-top: 60px;
+	width:72%;
 	margin-left:13.5%;
 	display:block;
 	position:absolute;
-	
-	
-
 }
 .events img
 {
@@ -331,26 +361,29 @@ canvas {
 	transition: 0.15s ease-in-out;
 	margin-left:-4px;
 	overflow:hidden;
+	z-index:1;
+	transition:0.1s ease-in-out;
+
 }
 .events:hover img
 {
 	filter:brightness(0.4);
-
 }
 .events img:hover
 {
 	filter:brightness(1);
+	cursor:pointer;
 }
 
 
-
+/* responsive events */
 @media(max-width:768px){
 
 .events
 {
-	padding-top: 90px;
+	margin-top: 40px;
 	width:75%;
-	margin-left:14vw;
+	margin-left:14.5vw;
 	display:block;
 	position:absolute;
 }
@@ -365,22 +398,17 @@ canvas {
 .events:hover img
 {
 	filter:brightness(0.4);
+	transition:0.1s linear;
 
 }
 .events img:hover
 {
 	filter:brightness(1);
+	transition:0.1s linear;
+
 }
 
 
-	
-	
-	
-	
-	
-	
-	
-	
 }
 
 
