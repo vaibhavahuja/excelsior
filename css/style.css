@@ -8,7 +8,10 @@ body{
 	background-image:url("../images/bg.gif");
 	background-attachment:fixed;
 }
+p{
+	font-family:Open Sans;
 
+}
 /* scrollbar changed a bit */
 body::-webkit-scrollbar {
     width: 0.51em;
