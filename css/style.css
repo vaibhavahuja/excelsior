@@ -3,7 +3,7 @@
 
 body{
 	margin:0;
-	height:4000px;
+	height:auto;
 	font-family:Open Sans;
 	background-image:url("../images/bg.gif");
 	background-attachment:fixed;
@@ -437,6 +437,13 @@ canvas {
 	margin-bottom:18.5px;
 	margin-top:35px;
 	overflow:hidden;
+	filter:grayscale(60%);
+}
+
+.memberpic:hover{
+	filter:grayscale(0%);
+	transition:0.2s linear;
+	cursor:pointer;
 }
 
 .name{
@@ -455,7 +462,6 @@ canvas {
 .memberpic:hover .name{
 	opacity:1;	
 	transition:0.2s linear;
-
 }
 
 
